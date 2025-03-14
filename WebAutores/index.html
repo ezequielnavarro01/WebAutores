@@ -3,47 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Gestion de Autores</title>
-<style>
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 5 / span 5;
-}
-
-.div2 {
-    grid-row: span 4 / span 4;
-    grid-row-start: 2;
-}
-
-.div3 {
-    grid-column: span 4 / span 4;
-    grid-row: span 4 / span 4;
-    grid-row-start: 2;	
-}
-
-.hidden {
-    display: none;
-}
-
-</style>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector("button").addEventListener("click", function() {
-            document.querySelector(".div3").classList.toggle("hidden");
-        });
-    });
-    </script>
+<link rel="stylesheet" type="text/css" href="estilos.css"></link>
 </head>
 <body>
 	<div class="parent">
     <div class="div1"><h1>Gestión de autores</h1></div>
     <div class="div2"><button>Nuevo Autor</button> <button>Listar Autores</button></div>
-    <div class="div3 hidden" > <h1>Formulario para crear un nuevo autor</h1>
+    <div class="div3"><h1> Texto Funcionalidad</h1> </div>
+    <div class="div4"><h1>Formulario para crear un nuevo autor</h1></div>
   
     <form action="resultadoInserccion.jsp" method="POST">
    		 <label for="nombre">Nombre del autor:</label> <input type="text"
